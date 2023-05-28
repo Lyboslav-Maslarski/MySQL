@@ -128,6 +128,7 @@ WHERE
     YEAR(`start`) IN (2011 , 2012)
 ORDER BY `start` , `name`
 LIMIT 50;
+
 ---------------------------------------------------------------
 Problem 13
 SELECT 
@@ -137,6 +138,7 @@ SELECT
 FROM
     `users`
 ORDER BY `email provider` , `user_name`;
+
 ---------------------------------------------------------------
 Problem 14
 SELECT 
