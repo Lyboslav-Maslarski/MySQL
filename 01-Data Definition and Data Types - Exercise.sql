@@ -1,12 +1,12 @@
 Problem 1 
 create table `minions`(
-	`id` int primary key auto_increment,
-	`name` varchar(50) not null,
-	`age` int not null
+	id int primary key auto_increment,
+	name varchar(50) not null,
+	age int not null
 );
 create table `towns`(
-	`town_id` int primary key auto_increment,
-	`name` varchar(50) not null
+	town_id int primary key auto_increment,
+	name varchar(50) not null
 );
 
 ---------------------------------------------------------------
@@ -80,7 +80,7 @@ VALUES
 
 ---------------------------------------------------------------
 Problem 8
-ALTER TABLE `users`
+ALTER TABLE users
 DROP PRIMARY KEY,
 ADD CONSTRAINT pk_users2
 PRIMARY KEY `users` (`id`,`username`);
