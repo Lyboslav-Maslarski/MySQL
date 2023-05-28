@@ -135,6 +135,7 @@ FROM
 	JOIN `account_holders` AS ah ON  a.`account_holder_id` = ah.`id`
     WHERE a.`id` = `id`;
 END;
+
 ---------------------------------------------------------------
 Problem 12
 CREATE PROCEDURE usp_deposit_money(`account_id` INT, `money_amount` DOUBLE(19,4))
@@ -144,6 +145,7 @@ IF (money_amount > 0)
 ELSE ROLLBACK;
 END IF;
 END
+
 ---------------------------------------------------------------
 Problem 13
 CREATE PROCEDURE usp_withdraw_money(`account_id` INT, `money_amount` DOUBLE(19,4))
